@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
 	<artifactId>pdobeans</artifactId>
 
-	<groupId>uk.org.briccs.i2b2</groupId>
+	<groupId>org.brisskit.app.i2b2</groupId>
 
 	<name>XMLBeans for i2b2 PDO. For BRISSkit.</name>
 
@@ -15,24 +15,29 @@ The PDO version 1.1 schema is included within this project.</description>
 	
 	
 	
-	<url>http://www.briccs.org.uk/</url>
+	<url>http://www.brisskit.le.ac.uk</url>
 
 	<!--+ 
 	    | The distributionManagement element is required for deploying an artifact to a remote repository 
 	    +-->
 	<distributionManagement>
 		<repository>
-			<id>mvn.briccs.org.uk</id>
-			<name>BRICCS Maven Repository</name>
-			<url>scpexe://mvn.briccs.org.uk/var/local/briccs/maven/repo</url>
+			<id>nexus</id>
+			<name>Brisskit Maven Snapshots</name>
+			<url>scpexe://maven.brisskit.org/var/local/brisskit/sonatype-work/nexus/storage/releases</url>
 		</repository>
+		<snapshotRepository>
+			<id>nexus</id>
+			<name>Brisskit Maven Releases</name>
+			<url>scpexe://maven.brisskit.org/var/local/brisskit/sonatype-work/nexus/storage/snapshots</url>
+		</snapshotRepository>
 	</distributionManagement>
 
 
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.xmlbeans</groupId>
-			<artifactId>xbean</artifactId>
+			<artifactId>xmlbeans</artifactId>
 			<version>2.5.0</version>
 		</dependency>
 	</dependencies>
@@ -43,8 +48,8 @@ The PDO version 1.1 schema is included within this project.</description>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>1.5</source>
-                    <target>1.5</target>
+                    <source>1.6</source>
+                    <target>1.6</target>
                 </configuration>
             </plugin>
 			<plugin>
@@ -91,9 +96,9 @@ The PDO version 1.1 schema is included within this project.</description>
 
 	<repositories>
 		<repository>
-			<id>mvn.briccs.org.uk</id>
-			<name>BRICCS Maven Repo</name>
-			<url>http://mvn.briccs.org.uk</url>
+			<id>nexus</id>
+			<name>Brisskit Maven Repo</name>
+			<url>http://maven.brisskit.org/nexus/content/groups/public</url>
 			<releases>
 				<enabled>false</enabled>
 			</releases>
@@ -103,5 +108,5 @@ The PDO version 1.1 schema is included within this project.</description>
 		</repository>
 	</repositories> 
 
-	<version>2.0</version>
+	<version>1.0-RC1</version>
 </project>
