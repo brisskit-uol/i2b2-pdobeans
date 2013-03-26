@@ -16,7 +16,7 @@
            xmlns:pdo="http://www.i2b2.org/xsd/hive/pdo/1.1/pdo">
 
   <xb:namespace uri="http://www.i2b2.org/xsd/hive/pdo/1.1/pdo">
-    <xb:package>uk.org.briccs.pdo.beans</xb:package>
+    <xb:package>org.brisskit.pdo.beans</xb:package>
   </xb:namespace>
 
 
