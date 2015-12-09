@@ -64,7 +64,7 @@ The PDO version 1.1 schema is included within this project.</description>
 					</execution>
 				</executions>
 				<configuration>
-					<schemaDirectory>src/xsd/hive/pdo/v1.1</schemaDirectory>
+					<schemaDirectory>src/main/xsd/hive/pdo/v1.1</schemaDirectory>
 					<!--
 						classGenerationDirectory>target/classes</classGenerationDirectory
 					-->
@@ -73,7 +73,7 @@ The PDO version 1.1 schema is included within this project.</description>
 					<staleFile>target/staleFlag</staleFile>
 					<verbose>true</verbose>
 					<download>true</download>
-					<outputJar>lib/${artifactId}.jar</outputJar>
+					<outputJar>target/lib/${artifactId}.jar</outputJar>
 					<defaultXmlConfigDir>config</defaultXmlConfigDir>
 				</configuration>
 			</plugin>
